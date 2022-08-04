@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox.jsx";
+import Scroll from "./Scroll";
 import './App.css'
 
 function App(){
@@ -24,12 +25,17 @@ function App(){
     
     // empty dependency array means this effect will only run once (like componentDidMount in classes)
     },[]);
-
-    return <div className="tc">
+    if(state.robots.length === 0){
+        return <h1 className="tc">Loading</h1>
+    } else {
+        return <div className="tc">
         <h1 className="f1">Robo Friends</h1>
         <SearchBox searchInput={updateSearch} />
-        <CardList robots={state.filter}/>
+        <Scroll>
+            <CardList robots={state.filter}/>
+        </Scroll>
     </div>
+    }
 }
 
 export default App;
