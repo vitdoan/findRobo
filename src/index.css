@@ -1,3 +1,7 @@
+h1{
+  font-size: xx-large;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #5800FF, #B983FF);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.roboCards img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.roboCards {
+  width: 200px;
+}
+
+.roboCards div {
+  width: 170px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+.roboCards div:hover{
+  overflow:scroll;
 }
