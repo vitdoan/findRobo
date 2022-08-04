@@ -1,19 +1,19 @@
 export const robots = [
   {
     id: 1,
-    name: 'Leanne Graham',
+    name: 'Putin',
     username: 'Bret',
     email: 'Sincere@april.biz'
   },
   {
     id: 2,
-    name: 'Ervin Howell',
+    name: 'Hehe',
     username: 'Antonette',
     email: 'Shanna@melissa.tv'
   },
   {
     id: 3,
-    name: 'Clementine Bauch',
+    name: 'Robot',
     username: 'Samantha',
     email: 'Nathan@yesenia.net'
   },
